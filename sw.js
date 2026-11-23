@@ -1,7 +1,7 @@
 const scope = new URL(self.registration.scope);
 const prefix = 'research-phd:' + scope.href + ':';
-const cacheName = prefix + '87c5c09448a90695';
-const files = ["index.html", "calendar.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "assets/index-BwGwwjt1.js", "assets/index-oXA-mCjr.css"].map(file => new URL(file, scope).href);
+const cacheName = prefix + '7c542630603e153d';
+const files = ["index.html","calendar.html","manifest.webmanifest","icon-192.png","icon-512.png","assets/index-BAKVR3cc.js","assets/index-DDjemMKK.css"].map(file => new URL(file, scope).href);
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(files)).then(() => self.skipWaiting()));
 });
