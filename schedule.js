@@ -41,7 +41,7 @@ function transact(mode, action) {
     };
   });
 }
-const readWorkspace = () => transact('readonly',workspace=>workspace);
+export const readWorkspace = () => transact('readonly',workspace=>workspace);
 function mountHome(){
   const widget=el('section',null,'schedule-widget');
   widget.setAttribute('aria-label','直近7日間の予定');
